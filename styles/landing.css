@@ -110,6 +110,12 @@ body.landing {
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 100px;
+    background-size: cover;
+    background-color: rgba(222,222,222,.5);
+}
+
+.best-version {
+    padding-bottom: 0px;   
 }
 
 div.vertical-line-black {
@@ -120,14 +126,29 @@ div.vertical-line-black {
     opacity: .5;
 }
 
+div.vertical-line-red {
+    width: 4px;
+    background-color: #980002;
+    height: 75px;
+    margin: auto;
+}
+
 div.vertical-line-black-bottom {
     width: 4px;
     min-width: 4px;
     background-color: black;
-    height: 75px;
+    height: 50px;
     margin: auto;
     opacity: .5;
-    margin-top: 45px;
+    margin-top: 150px;
+}
+div.vertical-line-black-top {
+    width: 4px;
+    min-width: 4px;
+    background-color: black;
+    height: 50px;
+    margin: auto;
+    opacity: .5;
 }
 
 .best-version-title, .about-eric-title, .how-i-work-title {
@@ -148,6 +169,11 @@ div.vertical-line-black-bottom {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.consult-options-title-wrapper .horizontal-line-red {
+    margin: 0;
+    text-align: left;
 }
 
 .best-version-description, .about-eric-description, .how-i-work-description {
@@ -235,6 +261,7 @@ div.vertical-line-black-bottom {
     margin: auto;
     letter-spacing: .56px;
     line-height: 1.4;
+    margin-top: 100px;
     
 }
 /*
@@ -244,6 +271,9 @@ div.vertical-line-black-bottom {
 }
 */
 
+.best-version .line-wrapper {
+    padding-top: 100px;
+}
 
 .consult-options-title-wrapper {
     width: 1000px;
@@ -300,7 +330,7 @@ div.vertical-line-black-bottom {
     box-shadow: 2px 3px 4px rgba(0,0,0,.50);
 }
 
-.consult-box button, .about-eric-block button {
+.consult-box button, .about-eric-block button, .blog button {
     background-color: #DEB238;
     border: none;
     color: #0E0C00;
@@ -387,6 +417,7 @@ div.vertical-line-black-bottom {
     padding-top: 200px;
     margin-left: -80px;
     position: relative;
+    margin-bottom: 200px;
 }
 .service-call-image img{
     width: 550px;
@@ -433,10 +464,10 @@ div.vertical-line-black-bottom {
 
 .about-eric-box {
     min-height: 1000px;
-    background-color: rgba(222,222,222,.25);
+    background-color: rgba(222,222,222,.5);
 }
 .about-eric-box div.vertical-line-black {
-    margin-top: 80px;
+   
 }
 .about-eric-block button {
     width: 150px;
@@ -511,7 +542,6 @@ div.vertical-line-black-bottom {
 .how-i-work {
     background-color: rgb(236, 236, 236);
     min-height: 800px; 
-    padding-bottom: 100px;
 }
 
 .how-i-work-title {
@@ -522,12 +552,13 @@ div.vertical-line-black-bottom {
 }  
 
 .how-work-points {
-    width: 600px;
+    width: 550px;
     height: 282px;
-    background-color: #0E0C00;
     color: #fff;
-    display: inline-block;
-    margin-left: 400px;
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .how-work-points h2 {
     font-family: 'Nunito Sans', sans-serif;
@@ -539,7 +570,7 @@ div.vertical-line-black-bottom {
     padding-left: 40px;
 }
 
-.how-work-points p {
+.how-work-points p, .how-i-work-explained p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
     font-weight: 400;
@@ -547,6 +578,109 @@ div.vertical-line-black-bottom {
     text-align: left;
     width: 80%;
     line-height: 1.5;
+}
+
+/*
+.how-work-points {
+    width: 600px;
+    height: 282px;
+    background-color: #0E0C00;
+    color: #fff;
+    position: relative;
+    display: block;
+    
+}
+*/
+
+.how-work-points.choose {
+    margin-left: 500px;   
+    margin-top: 100px;
+    background-color: #0E0C00;
+}
+
+.how-work-points.questions {
+    margin-left: 900px;   
+    background-color: #980002;
+}
+
+.how-work-points.report {
+    margin-left: 600px;   
+    background-color: #0E0C00;
+}
+
+.how-work-points p {
+   font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.how-work-points.report p {
+    padding-top: 0px;
+}
+
+
+.fa-dollar, .fa-edit {
+    font-size: 4em;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.how-work-points svg {
+    height: 70px;
+    width: 100%;
+    color: #ffffff;
+    fill: currentColor;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.how-i-work-explained .point-note {
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+/*  END HOW I WORK SECTION */
+
+.blog {
+    background-color: #0E0C00;
+    color: #fff;
+    min-height: 800px;
+}
+.blog  h5 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 500;
+}
+.blog .blog-image {
+    float: left;
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.blog .blog-copy {
+    float: right;
+    font-size: 1.5em;
+    display: inline-block;
+    width: 550px;
+    padding-right: 375px;
+    font-weight: 400;
+    letter-spacing: -.27px;
+    line-height: 1.7;
+}
+.blog .blog-copy button {
+    font-size: 1em;
+    margin: auto;
+    margin-top: 40px;
+    display: block;
 }
 .clearfix::before,
 .clearfix::after {
