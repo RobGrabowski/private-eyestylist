@@ -162,13 +162,16 @@ div.vertical-line-black-top {
 }
 
 .horizontal-line-red {
-    width: 100px;
+    width: 0px;
     height: 4px;
     background-color: #980002;
     min-height: 4px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+     -webkit-transition: all 0.40s ease-in-out;
+     -moz-transition: all 0.40s ease-in-out;
+     transition: all 0.40s ease-in-out;
 }
 
 .consult-options-title-wrapper .horizontal-line-red {
@@ -182,6 +185,14 @@ div.vertical-line-black-top {
     font-weight: 400;
     letter-spacing: 1.27px;
     line-height: 1.6;
+    
+}
+
+.best-version-description {
+    opacity: 0;
+     -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
 }
 
 .best-version-block, .about-eric-block, .how-i-work-block {
@@ -297,7 +308,10 @@ div.vertical-line-black-top {
     background-color: #0E0C00;
     color: #fff;
     display: inline-block;
-    margin-left: 400px;
+    margin-left: 0px;
+     -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
 }
 .consult-box h2 {
     font-family: 'Nunito Sans', sans-serif;
@@ -322,15 +336,23 @@ div.vertical-line-black-top {
 
 .consult-report-image {
     display: inline-block;
+    padding-top: 0px;
+    margin-left: 700px;
+    position: relative;
+    margin-bottom: 200px;
+     -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
 }
 .consult-report-image img {
     
     width: 550px;
     height: auto;
     box-shadow: 2px 3px 4px rgba(0,0,0,.50);
+    margin-bottom: 40px;
 }
 
-.consult-box button, .about-eric-block button, .blog button {
+.consult-box button, .about-eric-block button, .blog button, .service-call button {
     background-color: #DEB238;
     border: none;
     color: #0E0C00;
@@ -358,11 +380,21 @@ div.vertical-line-black-top {
     margin-left: -80px;
     position: absolute;
     margin-top: 300px;
+     -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
 }
 .skype-image, .eric-image {
     display: inline-block;
     position: relative;
     z-index: 1;
+      -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
+}
+
+.eric-image {
+    margin-left: 200px;
 }
 .skype-image img, .eric-image img {
     
@@ -370,8 +402,11 @@ div.vertical-line-black-top {
     height: auto;
     box-shadow: 2px 3px 4px rgba(0,0,0,.50);
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 0px;
     display: inline-block;
+     -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
 }
 .skype h2, .skype p {
     padding-left: 110px;
@@ -381,15 +416,22 @@ div.vertical-line-black-top {
     margin-left: 110px;
 }
 
-.consult-box.service-call {
+.service-call {
     width: 600px;
     height: 282px;
     background-color: #0E0C00;
     color: #fff;
     display: inline-block;
-    margin-left: 400px;
     position: relative;
     margin-top: 200px;
+     -webkit-transition: all 0.50s ease-in-out;
+     -moz-transition: all 0.50s ease-in-out;
+     transition: all 0.50s ease-in-out;
+}
+
+.service-call {
+/*    margin-left: 400px;  commented for animation */
+      margin-left: 0px;
 }
 .service-call h2 {
     font-family: 'Nunito Sans', sans-serif;
@@ -415,7 +457,8 @@ div.vertical-line-black-top {
 .service-call-image {
     display: inline-block;
     padding-top: 200px;
-    margin-left: -80px;
+/*    margin-left: -80px;  commented for animation */
+    margin-left: 0px;
     position: relative;
     margin-bottom: 200px;
 }
@@ -706,6 +749,7 @@ div.vertical-line-black-top {
 .frames-wrapper {
     width: 80%;
     margin: auto;
+    padding-bottom: 100px;
 }
 .frames {
     width: 300px;
