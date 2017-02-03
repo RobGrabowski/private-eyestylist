@@ -75,7 +75,7 @@ body.landing {
 .hero-content-main-text{
     margin: auto;
     width: 75%;
-    padding-top: 150px;
+    padding-top: 180px;
     font-weight: 600;
     text-align: center;
     color: #ffffff;
@@ -142,6 +142,11 @@ div.vertical-line-black-bottom {
     opacity: .5;
     margin-top: 150px;
 }
+
+.best-version .vertical-line-black-bottom {
+    margin-top: 0px;
+    height: 50px;
+}
 div.vertical-line-black-top {
     width: 4px;
     min-width: 4px;
@@ -149,6 +154,9 @@ div.vertical-line-black-top {
     height: 50px;
     margin: auto;
     opacity: .5;
+    -webkit-transition: all 0.70s ease-in-out;
+     -moz-transition: all 0.70s ease-in-out;
+     transition: all 0.70s ease-in-out;
 }
 
 .best-version-title, .about-eric-title, .how-i-work-title {
@@ -169,14 +177,15 @@ div.vertical-line-black-top {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-     -webkit-transition: all 0.40s ease-in-out;
-     -moz-transition: all 0.40s ease-in-out;
-     transition: all 0.40s ease-in-out;
+     -webkit-transition: all 0.70s ease-in-out;
+     -moz-transition: all 0.70s ease-in-out;
+     transition: all 0.70s ease-in-out;
 }
 
 .consult-options-title-wrapper .horizontal-line-red {
     margin: 0;
     text-align: left;
+    width: 0;
 }
 
 .best-version-description, .about-eric-description, .how-i-work-description {
@@ -185,14 +194,11 @@ div.vertical-line-black-top {
     font-weight: 400;
     letter-spacing: 1.27px;
     line-height: 1.6;
-    
-}
-
-.best-version-description {
     opacity: 0;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
+    
 }
 
 .best-version-block, .about-eric-block, .how-i-work-block {
@@ -206,6 +212,7 @@ div.vertical-line-black-top {
     padding: 80px;
     position: relative;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .best-version-block .wall, .about-eric-block .wall, .how-i-work-block .wall {
@@ -273,6 +280,10 @@ div.vertical-line-black-top {
     letter-spacing: .56px;
     line-height: 1.4;
     margin-top: 100px;
+    opacity: 0;
+     -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
     
 }
 /*
@@ -684,19 +695,29 @@ div.vertical-line-black-top {
 */
 
 .how-work-points.choose {
-    margin-left: 500px;   
+    margin-left: 0px;   
     margin-top: 100px;
     background-color: #0E0C00;
+    -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
 .how-work-points.questions {
-    margin-left: 900px;   
+    margin-left: 0px;   
     background-color: #980002;
+    -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
 .how-work-points.report {
-    margin-left: 600px;   
+    margin-left: 0px;   
     background-color: #0E0C00;
+    -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
+}
 }
 
 .how-work-points p {
@@ -745,7 +766,7 @@ div.vertical-line-black-top {
 .blog {
     background-color: #0E0C00;
     color: #fff;
-    min-height: 800px;
+    min-height: 900px;
 }
 .blog  h5 {
     font-size: 3em;
@@ -754,10 +775,15 @@ div.vertical-line-black-top {
     padding-bottom: 40px;
     font-weight: 500;
 }
+
+.blog-wrapper {
+    width: 1047px;
+    margin: auto;
+}
 .blog .blog-image {
     float: left;
     display: inline-block;
-    margin-left: 250px;
+/*    margin-left: 250px;*/
     margin-top: 20px;
 }
 
@@ -766,7 +792,7 @@ div.vertical-line-black-top {
     font-size: 1.5em;
     display: inline-block;
     width: 550px;
-    padding-right: 250px;
+/*    padding-right: 250px;*/
     font-weight: 400;
     letter-spacing: -.27px;
     line-height: 1.7;
@@ -797,7 +823,7 @@ div.vertical-line-black-top {
 }
 
 .frames-wrapper {
-    width: 80%;
+    width: 1320px;
     margin: auto;
     padding-bottom: 100px;
 }
