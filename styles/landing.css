@@ -37,7 +37,7 @@ body.landing {
     color: #ffffff;
 }
 
-.links-container-left, .links-container-footer-lef {
+.links-container-left, .links-container-footer-left {
     float: left;
     padding-left: 180px;
     
@@ -48,6 +48,10 @@ body.landing {
     padding-left: 20px;
     letter-spacing: 2.03px;
     font-weight: 400;
+}
+
+.hero-content .links-container-right {
+    padding-top: 5px;
 }
 
 .navbar-link span {
@@ -177,9 +181,9 @@ div.vertical-line-black-top {
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-     -webkit-transition: all 0.70s ease-in-out;
-     -moz-transition: all 0.70s ease-in-out;
-     transition: all 0.70s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
 .consult-options-title-wrapper .horizontal-line-red {
@@ -281,9 +285,9 @@ div.vertical-line-black-top {
     line-height: 1.4;
     margin-top: 100px;
     opacity: 0;
-     -webkit-transition: all 2s ease-in-out;
-     -moz-transition: all 2s ease-in-out;
-     transition: all 2s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
     
 }
 /*
@@ -320,9 +324,9 @@ div.vertical-line-black-top {
     color: #fff;
     display: inline-block;
     margin-left: 0px;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 .consult-box h2, .skype h2 {
     font-family: 'Nunito Sans', sans-serif;
@@ -352,9 +356,9 @@ div.vertical-line-black-top {
     margin-left: 350px;
     position: relative;
     margin-bottom: 200px;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 .consult-report-image img {
     
@@ -362,9 +366,9 @@ div.vertical-line-black-top {
     height: auto;
     box-shadow: 2px 3px 4px rgba(0,0,0,.50);
     margin-bottom: 40px;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
 .consult-box button, .about-eric-block button, .blog button, .service-call button, .skype button {
@@ -395,9 +399,9 @@ div.vertical-line-black-top {
     margin-left: 100px;
     position: absolute;
     margin-top: 0px;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
     opacity: 0;
 }
 
@@ -418,9 +422,9 @@ div.vertical-line-black-top {
     display: inline-block;
     position: relative;
     z-index: 1;
-      -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
 }
 
 
@@ -436,9 +440,9 @@ div.vertical-line-black-top {
     
     margin-left: 0px;
     display: inline-block;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+     -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
 }
 
 .eric-image img {
@@ -460,9 +464,9 @@ div.vertical-line-black-top {
     display: inline-block;
     position: relative;
     margin-top: 200px;
-     -webkit-transition: all 0.50s ease-in-out;
-     -moz-transition: all 0.50s ease-in-out;
-     transition: all 0.50s ease-in-out;
+     -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
 }
 
 .service-call {
@@ -498,9 +502,9 @@ div.vertical-line-black-top {
     position: relative;
     margin-bottom: 200px;
     opacity: 0;
-     -webkit-transition: all 0.70s ease-in-out;
-     -moz-transition: all 0.70s ease-in-out;
-     transition: all 0.70s ease-in-out;
+     -webkit-transition: all 2s ease-in-out;
+     -moz-transition: all 2s ease-in-out;
+     transition: all 2s ease-in-out;
 }
 .service-call-image img{
     width: 550px;
