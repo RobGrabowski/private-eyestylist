@@ -34,15 +34,14 @@ var animateBox = function(whichOption) {
             })
             break;
         case 2:
-            $('.consult-box.skype').css({ 
+              console.log('here in 2=');
+            $('.skype').css({ 
                 marginLeft: -80,
+                marginTop:  200,
+                opacity: 1,
                 transform: 'scaleX(1) translateY(0)'
             }) 
             $('.skype-image img').css({
-                marginLeft: 300,
-                transform: 'scaleX(1) translateY(0)'
-            })
-            $('.eric-image img').css({
                 marginLeft: 300,
                 transform: 'scaleX(1) translateY(0)'
             })
@@ -54,6 +53,7 @@ var animateBox = function(whichOption) {
             }) 
             $('.service-call-image').css({
                 marginLeft: -80,
+                opacity: 1,
                 transform: 'scaleX(1) translateY(0)'
             })
             break;
@@ -69,7 +69,8 @@ $(window).load(function() {
 //         console.log('hit5');
 //         showDescription();
 //     }
-        
+    var _t = $(".landing").scrollTop();    
+    
     var scrollDistanceBestVersion = $('.best-version').offset().top - $(window).height() + 700;
     $(window).scroll(function(event) {
          if ($(window).scrollTop() >= scrollDistanceBestVersion) {
@@ -86,18 +87,29 @@ $(window).load(function() {
     
     var scrollDistanceConsultOptionTwo = $('.consult-box').offset().top - $(window).height() + 900;
     $(window).scroll(function(event) {
+        console.log('Scrolltop='+$(window).scrollTop());
+        console.log('scrollDistanceConsultOptionTwo='+scrollDistanceConsultOptionTwo);
          if ($(window).scrollTop() >= scrollDistanceConsultOptionTwo) {
              animateBox(2);
          }
     });
     
+//    
+//  $("#container").scroll(function() {
+//    var _n = $("#container").scrollTop();
+//    if (_n > _t) {
+//      $("#target").text("Down");
+//    } else {
+//      $("#target").text("Up");
+//    }
+//    _t = _n;
     var scrollDistanceConsultOptionThree = $('.skype-image').offset().top - $(window).height() + 900;
     $(window).scroll(function(event) {
          if ($(window).scrollTop() >= scrollDistanceConsultOptionThree) {
              animateBox(3);
          }
     });
-    //.skype-image img
+    
    
 });
     
