@@ -23,7 +23,7 @@ body.landing {
      width: 100%;
      background-repeat: no-repeat;
      background-position: top left;
-     background-size: 100% auto;
+     background-size: 110% auto;
 }
 .navbar-links-wrapper {
     padding-top: 20px;
@@ -52,6 +52,9 @@ body.landing {
 
 .hero-content .links-container-right {
     padding-top: 5px;
+}
+.hero-content .fa-bars {
+    display: none;
 }
 
 .navbar-link span {
@@ -102,6 +105,7 @@ body.landing {
     line-height: 1.2em;
     text-shadow: 0px 1px 1px rgb(14,12,0);
     font-weight: 600;
+    margin-bottom: 0;
     
     
 }
@@ -916,4 +920,762 @@ div.vertical-line-black-top {
 
 .clearfix::after {
    clear: both;
+}
+
+@media screen and (max-width:767px) {
+    .hero-content {
+         background-size: cover;
+         background-position: -350px 0;
+    }
+    .navbar-links-wrapper {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .navbar {
+        width: 98%;
+        font-family: 'Nunito Sans', sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.7em;
+        color: #ffffff;
+    }
+
+    .links-container-left {
+        display: none;
+    }
+    
+    .links-container-right {
+        display: none;
+    }
+    
+    .hero-content .fa-bars {
+        display: inline-block;
+        float: right;
+        padding-right: 20px;
+    }
+
+   
+    .hero-content-main-text{
+        margin: auto;
+        width: 75%;
+        padding-top: 230px;
+        font-weight: 600;
+        text-align: center;
+        color: #ffffff;
+    }
+    .hero-title {
+        font-size: 3em;
+        width: 250px;
+        margin: auto;
+
+    }
+    .hero-title span {
+        color: #980002;
+    }
+
+    .hero-sub-title {
+        font-size: 1.7em;
+        text-shadow: 0px 1px 1px rgba(14,12,0,.4);
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* best-version of yourself */
+    .best-version, .about-eric-box {
+        min-height: inherit; 
+        background-image: url(../assets/images/glasses2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding-bottom: 100px;
+        background-size: cover;
+        background-color: rgba(222,222,222,.5);
+    }
+
+    .best-version {
+        padding-bottom: 0px;   
+    }
+
+    div.vertical-line-red {
+        width: 4px;
+        background-color: #980002;
+        height: 75px;
+        margin: auto;
+    }
+
+    div.vertical-line-black-bottom {
+        width: 4px;
+        min-width: 4px;
+        background-color: black;
+        height: 50px;
+        margin: auto;
+        opacity: .5;
+        margin-top: 150px;
+    }
+
+    .best-version .vertical-line-black-bottom {
+        margin-top: 0px;
+        height: 50px;
+    }
+    div.vertical-line-black-top {
+        width: 4px;
+        min-width: 4px;
+        background-color: black;
+        height: 50px;
+        margin: auto;
+        opacity: .5;
+        -webkit-transition: all 0.70s ease-in-out;
+         -moz-transition: all 0.70s ease-in-out;
+         transition: all 0.70s ease-in-out;
+    }
+
+    .best-version-title, .about-eric-title, .how-i-work-title {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 2em;
+        font-weight: 600;
+        transform: inherit;
+        letter-spacing: .5px;
+        text-align: center;
+        
+    }
+
+    .horizontal-line-red {
+        width: 100px;
+        height: 4px;
+        background-color: #980002;
+        min-height: 4px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+         -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+    }
+
+    .consult-options-title-wrapper .horizontal-line-red {
+        margin: auto;
+        text-align: left;
+        width: 80%;
+    }
+
+    .best-version-description, .about-eric-description, .how-i-work-description {
+       
+        font-size: 1.4em;
+        font-weight: 400;      
+        opacity: 1;
+        text-align: center;
+        padding-bottom: 50px;
+        width: 90%;
+        margin: auto;
+        -webkit-transition: all 2s ease-in-out;
+         -moz-transition: all 2s ease-in-out;
+         transition: all 2s ease-in-out;
+
+    }
+
+    .best-version-block, .about-eric-block, .how-i-work-block {
+        width: 80%;
+        margin: auto;
+        min-width: 320px;
+        padding: 50px 0 0px 0;
+        
+    }
+
+    .best-version-block .wall, .about-eric-block .wall, .how-i-work-block .wall {
+        position: absolute;
+    }
+
+   
+    .best-version-block .wall.wall-bottom, .about-eric-block .wall.wall-bottom, .how-i-work-block .wall.wall-bottom {
+       display: none;
+    }
+    .wall {
+        display: none;
+    }
+    .best-version-block .wall.wall-left-bottom {
+        display: none;
+    }
+    
+    .how-i-work-block .wall.wall-left-bottom {
+        display: none;
+    }
+
+    
+
+    /* CONSULT OPTIONS */
+    .consult-options-intro {
+        width: 90%;
+        margin: auto;
+        padding-top: 50px; 
+        opacity: 1;
+         -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+
+    }
+
+    .best-version .line-wrapper {
+        padding-top: 100px;
+    }
+
+    .consult-options-title-wrapper {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .consult-options-title {
+        font-size: 1.8em;
+        padding-top: 100px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 0px;
+        letter-spacing: -.1px;
+        width: 290px;
+        margin: auto;
+    }
+
+    .consult-box {
+        width: 100%;
+        height: 282px;
+        background-color: #0E0C00;
+        color: #fff;
+        display: block;
+        margin: auto;
+        text-align: center;
+         -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+    }
+    .consult-box h2, .skype h2 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.8em;
+        padding-top: 40px;
+        padding-left: 0px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .consult-box p, .skype p {
+ 
+        width: 80%;
+        margin: auto;    
+        padding-left: 0;
+        text-align: center;
+    }
+
+
+    .consult-report-image {
+        display: none;
+        width: 100%;
+    }
+    .consult-report-image img {
+
+        width: 550px;
+        height: auto;
+        box-shadow: 2px 3px 4px rgba(0,0,0,.50);
+        margin-bottom: 40px;
+         -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+    }
+
+    .consult-box button, .about-eric-block button, .blog button, .service-call button, .skype button {
+        margin: auto;
+        display: block;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .skype {
+        opacity: 1;
+        margin-left: 0px;
+        width: 100%;
+        position: relative;
+    }
+
+    /*
+    .consult-box {
+        width: 600px;
+        height: 282px;
+        background-color: #0E0C00;
+        color: #fff;
+        display: inline-block;
+        margin-left: 0px;
+         -webkit-transition: all 0.50s ease-in-out;
+         -moz-transition: all 0.50s ease-in-out;
+         transition: all 0.50s ease-in-out;
+    }
+    */
+    .skype-image, .eric-image {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+          -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+    }
+
+
+    .skype-image{
+        display: none;
+    }
+
+    .skype-image img {
+
+        width: 550px;
+        height: auto;
+        box-shadow: 2px 3px 4px rgba(0,0,0,.50);
+
+        margin-left: 0px;
+        display: inline-block;
+         -webkit-transition: all 2s ease-in-out;
+         -moz-transition: all 2s ease-in-out;
+         transition: all 2s ease-in-out;
+    }
+
+    .eric-image img {
+        margin-top: 100px;
+    }
+    .skype h2, .skype p {
+        padding-left: 0px;
+        text-align: center;
+    }
+    
+
+    .skype button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service-call {
+        width: 100%;
+        height: 282px;
+        background-color: #0E0C00;
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        margin-top: 200px;
+         -webkit-transition: all 2s ease-in-out;
+         -moz-transition: all 2s ease-in-out;
+         transition: all 2s ease-in-out;
+    }
+
+    .service-call {
+ 
+          margin-left: 0px;
+          margin-top: 0;
+            height: 300px;
+    }
+    .service-call button{
+        margin-top: 0;
+    }
+    .service-call h2 {
+        font-size: 1.8em;
+        padding-top: 50px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        width: 250px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .service-call p {
+        padding-left: 0px;
+        padding-bottom: 20px;
+        text-align: left;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .service-call-image {
+        display: none;
+    }
+    .service-call-image img{
+        width: 550px;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+
+    .about-eric-box {
+        
+        background-color: rgba(222,222,222,.5);
+    }
+    
+    .about-eric-block .wall.wall-left-bottom, .how-i-work-block .wall.wall-left-bottom
+    .about-eric-box div.vertical-line-black {
+        display: none;
+    }
+    .about-eric-block button {
+        width: 150px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .eric-info-box {
+        width: 100%;
+        height: 420px;
+        background-color: #0E0C00;
+        color: #fff;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        margin-top: 0px;
+
+    }
+    .eric-info-box:after {
+        display: block;
+    }
+    .eric-info-box h2 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 2.5em;
+        font-weight: 500;
+        letter-spacing: -.08px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    .eric-info-box p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        padding-left: 0px;
+        text-align: left;
+        width: 290px;
+        line-height: 1.5;
+    }
+
+    .eric-info-box .list-content {
+        width: 80%;
+        padding-left: inherit;
+        font-size: 1.4em;
+        margin: auto;
+    }
+
+    .eric-info-box .list-content li{
+        list-style-type: none;
+        line-height: 1.5;
+    }
+    .eric-info-box .suggestions-list-left {
+        float: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .eric-info-box .suggestions-list-right {
+        float: none;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .about-eric-info-summary {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.4;
+    }
+
+    .eric-image img {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        box-shadow: ;    
+        margin-left: 0px;
+        display: inline-block;
+         -webkit-transition: all 0.50s ease-in-out;
+         -moz-transition: all 0.50s ease-in-out;
+         transition: all 0.50s ease-in-out;
+    }
+    .about-eric-info p {
+        font-size: 1.6em;   
+        text-align: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .suggestions-wrapper{
+        width: 100%; /* subtract out the -80padding from .eric-info-box */
+        margin: auto;
+        min-height: 804px;
+    }
+    .suggestions-wrapper .eric-image {
+        display: block;
+    }
+
+    /*  END ABOUT ERIC SECTION */
+
+    /*  HOW I WORK SECTION */
+    .how-i-work {
+        background-color: rgb(236, 236, 236);
+        min-height: 0px; 
+    }
+
+    .how-i-work-title {
+         text-align: center;
+    }
+    .how-i-work div.vertical-line-black {
+        margin-top: 110px;
+    } 
+    
+  .how-i-work .vertical-line-black-bottom {
+        margin-top: 0px;
+    } 
+
+    .how-work-points {
+        width: 550px;
+        height: 282px;
+        color: #fff;
+        position: relative;
+        display: block;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .how-work-points h2 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 2.5em;
+        font-weight: 500;
+        letter-spacing: -.08px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    .how-work-points p, .how-i-work-explained p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4em;
+        font-weight: 400;
+        padding-left: 40px;
+        text-align: left;
+        width: 80%;
+        line-height: 1.5;
+    }
+
+    .how-i-work-explained .vertical-line-red {
+        display: none;
+    }
+
+    .how-work-points.choose {
+        margin-left: 0px;   
+        margin-top: 100px;
+        width: 100%;
+        height: 240px;
+        background-color: #0E0C00;
+        -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+    }
+
+    .how-work-points.questions {
+        margin-left: 0px;   
+        width: 100%;
+        height: 240px;
+        background-color: #980002;
+        -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+         transition: all 1s ease-in-out;
+    }
+
+    .how-work-points.report {
+        margin-left: 0px;   
+        width: 100%;
+        height: 260px;
+        background-color: #0E0C00;
+        -webkit-transition: all 2s ease-in-out;
+         -moz-transition: all 2s ease-in-out;
+         transition: all 2s ease-in-out;
+    }
+    }
+
+    .how-work-points p {
+       font-family: 'Roboto', sans-serif;
+        font-size: 1.6em;
+        font-weight: 400;
+        text-align: center;
+        width: 80%;
+        line-height: 1.5;
+        padding-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+    }
+
+    .how-work-points.report p {
+        padding-top: 0px;
+    }
+
+
+    .fa-dollar, .fa-edit {
+        font-size: 3em;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .how-work-points svg {
+        height: 70px;
+        width: 100%;
+        color: #ffffff;
+        fill: currentColor;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .how-i-work-explained .point-note {
+
+        width: 70%;
+        padding-top: 50px;
+        margin: auto;
+        padding-bottom: 50px;
+        font-size: 1.2em;
+        padding-left: 0;
+    }
+
+    /*  END HOW I WORK SECTION */
+
+    /* BEGIN BLOG SECTION */
+
+    .blog {
+        background-color: #0E0C00;
+        color: #fff;
+        min-height: 800px;
+    }
+    .blog  h5 {
+        font-size: 1.6em;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-weight: 500;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .blog-wrapper {
+        width: 100%;
+        margin: auto;
+    }
+    .blog .blog-image {
+       display: none;
+    }
+
+    .blog .blog-copy {
+        float: none;
+        font-size: 1.2em;
+        display: block;
+        width: 80%;
+        padding-right: 0px;
+        font-weight: 400;
+        letter-spacing: -.27px;
+        line-height: 1.7;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blog .blog-copy button {
+        font-size: 1em;
+        margin: auto;
+        margin-top: 40px;
+        display: block;
+    }
+
+    /* END BLOG SECTION */
+
+    /* BEGIN HALL OF FRAMES SECTION */
+
+    .frame-reviews {
+        display: none;
+    }
+
+    .hall-of-frames-title {
+        font-size: 2em;
+    }
+
+    .frames-wrapper {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .frames {
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .frames h5 {
+        font-size: 2em;
+        font-family: 'Nunito Sans',sans-serif;
+        font-weight: 700;
+        margin-top: 10px;
+        letter-spacing: .29px;
+        line-height: 1.3;
+
+    }
+
+    .frames span {
+        font-weight: 500;
+    }
+    .frames a {
+        font-size: 1.5em;
+
+    }
+
+    .frames img{
+        height: 260px;
+        width: 260px;
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .frames .one {
+        margin-left: 200px;
+    }
+    /* END HALL OF FRAMES SECTION */
+
+    /* BEGIN FOOTER */
+
+
+
+    .links-container-footer-left {
+        display: none;
+    }
+
+    
+
+    .links-container-footer-right {
+        font-size: 1em;
+        text-align: center;
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .links-container-footer-right a {
+        font-weight: 400;
+        letter-spacing: 2.13px;
+    }
+
+    .footer .navbar {
+        padding-top: 30px;
+    }
+    
+    /* END FOOTER */
+
+
+    .clearfix::before,
+    .clearfix::after {
+       content: " ";
+       display: table;
+    }
+
+    .clearfix::after {
+       clear: both;
+    }
 }
