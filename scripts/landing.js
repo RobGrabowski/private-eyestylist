@@ -139,7 +139,7 @@ var animateBox = function(whichOption) {
 $(window).load(function() {
     // Automatically animate the points on a tall screen where scrolling can't trigger the animation
     
- if ($(window).width() > 5500000) {
+ if ($(window).width() > 900) {
          
      
     
