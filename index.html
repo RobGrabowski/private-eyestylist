@@ -33,7 +33,26 @@
                         <a href="services.html" class="navbar-link">About</a>
                         
                     </div>
-                     <i class="fa fa-bars" aria-hidden="true"></i>
+                     
+                     <div class="mobile-nav">
+                         <i class="fa fa-bars" aria-hidden="true"></i>
+                         <div class="menu-btn" id="menu-btn">
+                            <div></div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                         </div>
+
+                         <div class="responsive-menu">
+                            <ul>
+                               <li><a href="services.html" class="navbar-link">Services</a></li>
+                               <li><a href="services.html" class="navbar-link">Stories</a></li>
+                               <li><a href="services.html" class="navbar-link">Hall of Frames</a></li>
+                               <li><a href="services.html" class="navbar-link">Blog</a></li>
+                               <li><a href="services.html" class="navbar-link">About</a></li>
+                            </ul>
+                         </div>
+                    </div>
                  </nav>
             </div> 
              
@@ -293,9 +312,12 @@
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="scripts/landing.js"></script>
         
-        <script>
-         //animatePoints();
-         </script>
-
+        <script type="text/javascript">
+            jQuery(function($){
+                     $( '.fa-bars' ).click(function(){
+                     $('.responsive-menu').slideToggle(600);
+                     })
+                })
+        </script>
      </body>
  </html>

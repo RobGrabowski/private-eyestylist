@@ -922,6 +922,56 @@ div.vertical-line-black-top {
    clear: both;
 }
 
+/*
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
+}
+
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+*/
+
+.responsive-menu{
+	display: none;
+    width: 70%;
+    float: right;
+    background-color: #0E0C00;
+    margin-right: 10px;
+/*
+     -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+     transition: all 1s ease-in-out;
+*/
+}
+
+.mobile-nav {
+    
+}
+
+.mobile-nav li {
+    list-style: none;
+    padding: 10px 0;
+    font-size: .8em;
+}
+.expand {
+	display: block !important; 
+}
+
 @media screen and (max-width:767px) {
     .hero-content {
          background-size: cover;
