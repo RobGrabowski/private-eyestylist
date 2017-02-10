@@ -138,9 +138,10 @@ var animateBox = function(whichOption) {
 
 $(window).load(function() {
     // Automatically animate the points on a tall screen where scrolling can't trigger the animation
-    
- if ($(window).width() > 900 && $(window).height() > $(window).width()) {
-         
+    console.log('height='+$(window).height());
+    console.log('width='+$(window).width());
+// if ($(window).width() > 900 && $(window).height() > $(window).width()) {
+  if ($(window).width() > 900) {           
      
     
     var scrollDistanceBestVersion = $('.best-version').offset().top - $(window).height() + 700;
