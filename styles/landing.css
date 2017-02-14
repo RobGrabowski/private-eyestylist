@@ -3,6 +3,7 @@ body {
 	color: #333333;
 	background-color: #ffffff;
     font-size: 12px;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,6 +16,7 @@ section {
 
 body.landing {
      background-color: ffffff; /* sets the background color to an RGB value (see below) */
+     overflow-x: hidden;
  }
 .hero-content {
      position: relative; /* positioning will be explained in a resource */
@@ -344,6 +346,11 @@ div.vertical-line-black-top {
     font-weight: 600;
     margin-bottom: 0px;
     letter-spacing: -.1px;
+}
+.consult-box-wrapper, .skype-image-wrapper, .service-call-wrapper {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .consult-box {
@@ -1164,6 +1171,7 @@ div.vertical-line-black-top {
         transform: inherit;
         letter-spacing: .5px;
         text-align: center;
+        width: 100%;
         
     }
 
@@ -1191,7 +1199,7 @@ div.vertical-line-black-top {
         font-size: 1.4em;
         font-weight: 400;      
         opacity: 1;
-        text-align: center;
+        text-align: left;
         padding-bottom: 50px;
         width: 90%;
         margin: auto;
@@ -3326,6 +3334,170 @@ and (orientation : landscape) {
 
  }
 
+@media screen and (min-width:768px) 
+and (max-width: 1250px) {
+    .links-container-left {
+        display: none;
+    }
+    .links-container-right {
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding-right: 0;
+    }
+    .hero-content-main-text{
+        padding-top: 150px;
+    }
+    .hero-content{
+        min-height: 565px;
+    }
+    .hero-title {
+        font-size: 4em;
+        margin-bottom: .4em;
+    }
+    .hero-horizontal-line-red{
+        margin-bottom: 0;
+    }
+    .hero-sub-title{
+        margin-top: .6em;
+    }
+    
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 1402px) {
+        .navbar{
+            font-size: 1.5em;
+        }
+        .links-container-right {
+            width: 80%;
+            padding-right: 0px;
+            margin: auto;
+            float: none;
+            text-align: center;
+        }
+}
+
+
+@media screen and (min-width:768px) 
+    and (max-width: 1311px) {
+        .hero-content {
+            background-size: cover;
+        }
+        .hero-title{
+            font-size: 4em;
+        }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 1000px) {
+        .hero-title{
+            font-size: 3em;
+        }
+         .hero-sub-title{
+            font-size: 2em;
+        }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 850px) {
+        .hero-title{
+            font-size: 2.5em;
+        }
+         .hero-sub-title{
+            font-size: 1.5em;
+        }
+}
+/*
+@media screen and (min-width:768px) 
+    and (max-width: 1275px) {
+        .links-container-right {
+            width: 48%;
+            padding-right: 0px;
+            margin-right: 26%;
+            margin-left: 26%;
+            float: none;
+    }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 1245px) {
+        .links-container-right {
+            width: 52%;
+            padding-right: 0px;
+            margin-right: 24%;
+            margin-left: 24%;
+            float: none;
+    }
+}
+@media screen and (min-width:768px) 
+    and (max-width: 1150px) {
+        .links-container-right {
+            width: 54%;
+            padding-right: 0px;
+            margin-right: 23%;
+            margin-left: 23%;
+            float: none;
+    }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 1150px) {
+        .links-container-right {
+            width: 56%;
+            padding-right: 0px;
+            margin-right: 22%;
+            margin-left: 22%;
+            float: none;
+    }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 1069px) {
+        .links-container-right {
+            width: 58%;
+            padding-right: 0px;
+            margin: auto;
+            float: none;
+    }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 1033px) {
+        .links-container-right {
+            width: 60%;
+            padding-right: 0px;
+            margin: auto;
+            float: none;
+    }
+}
+
+@media screen and (min-width:768px) 
+    and (max-width: 999px) {
+        .links-container-right {
+            width: 62%;
+            padding-right: 0px;
+            margin: auto;
+            float: none;
+    }
+}
+*/
+
+
+
+@media screen and (min-width:1251px) 
+    and (max-width: 1480px) {
+    .links-container-left {
+        display: none;
+        padding-left: 50px;
+    }
+    .links-container-right {
+            width: 48%;
+            margin-right: 26%;
+            margin-left: 26%;
+            float: none;
+    }
+}
     .clearfix::before,
     .clearfix::after {
        content: " ";

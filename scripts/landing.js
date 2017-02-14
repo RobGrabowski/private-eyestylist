@@ -94,16 +94,35 @@
 
 
 var animateBox = function(whichOption) {
-     
+      var boxLeft = 'auto';
+      var boxWrapMargin = 'auto';
+      var boxWidth = 400;
+      var imgWidth = 400;
+      var skypeImgLeft = 'auto';
+      if( $(window).width() > 1150 ){
+          boxLeft = 400;
+          boxWidth = 600;
+          imgWidth = 550;
+          skypeImgLeft = 300;
+      }
+    console.log('boxLeft='+boxLeft);
+    console.log('boxWidth='+boxWidth);
+    console.log('whichOption='+whichOption);
       switch(whichOption) {
         case 1:
             $('.consult-box').css({ 
-                marginLeft: 400,
+                marginLeft: boxLeft,
+                width: boxWidth,
                 transform: 'scaleX(1) translateY(0)'
             }) 
             $('.consult-report-image').css({
                 paddingTop: 100,
                 marginLeft: -80,
+                width: imgWidth,
+                transform: 'scaleX(1) translateY(0)'
+            })
+            $('.consult-report-image img').css({
+                width: imgWidth,
                 transform: 'scaleX(1) translateY(0)'
             })
             break;
@@ -112,22 +131,30 @@ var animateBox = function(whichOption) {
             $('.skype').css({ 
                 marginLeft: -80,
                 marginTop:  200,
+                width: boxWidth,
                 opacity: 1,
                 transform: 'scaleX(1) translateY(0)'
             }) 
             $('.skype-image img').css({
-                marginLeft: 300,
+                marginLeft: skypeImgLeft,
+                width: imgWidth,
                 transform: 'scaleX(1) translateY(0)'
             })
             break;
         case 3:
            $('.service-call').css({ 
-                marginLeft: 400,
+                marginLeft: boxLeft,
+                width: boxWidth,
                 transform: 'scaleX(1) translateY(0)'
             }) 
             $('.service-call-image').css({
                 marginLeft: -80,
+                width: imgWidth,
                 opacity: 1,
+                transform: 'scaleX(1) translateY(0)'
+            })
+            $('.service-call-image img').css({
+                width: imgWidth,
                 transform: 'scaleX(1) translateY(0)'
             })
             break;
@@ -141,7 +168,7 @@ $(window).load(function() {
     console.log('height='+$(window).height());
     console.log('width='+$(window).width());
 // if ($(window).width() > 900 && $(window).height() > $(window).width()) {
-  if ($(window).width() > 900) {           
+  if ($(window).width() > 767) {           
      
     
     var scrollDistanceBestVersion = $('.best-version').offset().top - $(window).height() + 700;
