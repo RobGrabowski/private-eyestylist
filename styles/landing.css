@@ -337,6 +337,7 @@ div.vertical-line-black-top {
     margin: auto;
     text-align: left;
     margin-bottom: 100px;
+    padding-left: 10%;
 }
 
 .consult-options-title {
@@ -1259,6 +1260,7 @@ div.vertical-line-black-top {
         margin: auto;
         text-align: center;
         margin-bottom: 20px;
+        padding-left: 0;
     }
 
     .consult-options-title {
@@ -1303,7 +1305,7 @@ div.vertical-line-black-top {
     }
 
 
-    .consult-report-image {
+    .consult-report-image, .skype-image, .service-call-image {
         display: none;
         width: 100%;
     }
@@ -1345,7 +1347,7 @@ div.vertical-line-black-top {
          transition: all 0.50s ease-in-out;
     }
     */
-    .skype-image, .eric-image {
+    .eric-image {
         display: inline-block;
         position: relative;
         z-index: 1;
@@ -1355,10 +1357,7 @@ div.vertical-line-black-top {
     }
 
 
-    .skype-image{
-        display: none;
-    }
-
+    
     .skype-image img {
 
         width: 550px;
@@ -1427,9 +1426,7 @@ div.vertical-line-black-top {
         text-align: center;
     }
 
-    .service-call-image {
-        display: none;
-    }
+    
     .service-call-image img{
         width: 550px;
         height: auto;
@@ -1995,6 +1992,11 @@ and (orientation : portrait) {
     
 
     /* CONSULT OPTIONS */
+    
+    .consult-report-image, .skype-image, .service-call-image {
+        display: none;
+        width: 100%;
+    }
     .consult-options-intro {
         width: 70%;
         margin: auto;

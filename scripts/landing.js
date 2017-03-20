@@ -94,15 +94,26 @@
 
 
 var animateBox = function(whichOption) {
-      var boxLeft = 'auto';
+      var boxLeft = 0;
       var boxWrapMargin = 'auto';
+      var boxLeftOption3 = 0;
       var boxWidth = 400;
+      var boxHeight = 300;
       var imgWidth = 400;
-      var skypeImgLeft = 'auto';
+      var skypeImgLeft = 10+'%';
+      var wrapperWidth = 100+'%';
       if( $(window).width() > 1150 ){
-          boxLeft = 400;
-          boxWidth = 600;
-          imgWidth = 550;
+          console.log('oh yeah i in here');
+            $('.consult-box-wrapper').css({ 
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                width: wrapperWidth,
+                transform: 'scaleX(1) translateY(0)'
+            }) 
+          boxLeft = 20+'%';
+          boxLeftOption3 = 20+'%';
+          boxWidth = 400;
+          imgWidth = 400;
           skypeImgLeft = 300;
       }
     console.log('boxLeft='+boxLeft);
@@ -113,12 +124,14 @@ var animateBox = function(whichOption) {
             $('.consult-box').css({ 
                 marginLeft: boxLeft,
                 width: boxWidth,
+                height: boxHeight,
                 transform: 'scaleX(1) translateY(0)'
             }) 
             $('.consult-report-image').css({
                 paddingTop: 100,
                 marginLeft: -80,
                 width: imgWidth,
+                height: boxHeight,
                 transform: 'scaleX(1) translateY(0)'
             })
             $('.consult-report-image img').css({
@@ -130,21 +143,26 @@ var animateBox = function(whichOption) {
               console.log('here in 2=');
             $('.skype').css({ 
                 marginLeft: -80,
-                marginTop:  200,
-                width: boxWidth,
+                marginTop:  10+'%',
+                width: 400,
+                height: boxHeight,
                 opacity: 1,
                 transform: 'scaleX(1) translateY(0)'
             }) 
-            $('.skype-image img').css({
+            $('.skype-image').css({
                 marginLeft: skypeImgLeft,
+                transform: 'scaleX(1) translateY(0)'
+            })
+            $('.skype-image img').css({
                 width: imgWidth,
                 transform: 'scaleX(1) translateY(0)'
             })
             break;
         case 3:
            $('.service-call').css({ 
-                marginLeft: boxLeft,
+                marginLeft: boxLeftOption3,
                 width: boxWidth,
+                height: boxHeight,
                 transform: 'scaleX(1) translateY(0)'
             }) 
             $('.service-call-image').css({
@@ -213,14 +231,13 @@ $(window).load(function() {
     
     var scrollDistanceConsultOptionTwo = $('.consult-box').offset().top - $(window).height() + 900;
     $(window).scroll(function(event) {
-//        console.log('Scrolltop='+$(window).scrollTop());
-//        console.log('scrollDistanceConsultOptionTwo='+scrollDistanceConsultOptionTwo);
+
          if ($(window).scrollTop() >= scrollDistanceConsultOptionTwo) {
              animateBox(2);
          }
     });
     
-    var scrollDistanceConsultOptionThree = $('.skype-image').offset().top - $(window).height() + 700;
+    var scrollDistanceConsultOptionThree = $('.skype-image').offset().top - $(window).height();
     $(window).scroll(function(event) {
          if ($(window).scrollTop() >= scrollDistanceConsultOptionThree) {
              animateBox(3);
@@ -231,7 +248,7 @@ $(window).load(function() {
     
     // BEGIN ABOUT ERIC ANIMATIONS
     
-     var scrollDistanceAboutEricLine = $('.about-eric-block').offset().top - $(window).height() + 700;
+     var scrollDistanceAboutEricLine = $('.about-eric-block').offset().top - $(window).height() - 300;
     $(window).scroll(function(event) {
          if ($(window).scrollTop() >= scrollDistanceAboutEricLine) {
              animate(3);
@@ -243,7 +260,7 @@ $(window).load(function() {
     
     // BEGIN HOW I WORK ANIMATIONS
     
-     var scrollDistanceAboutHowWorkLine = $('.how-i-work').offset().top - $(window).height() + 500;
+     var scrollDistanceAboutHowWorkLine = $('.how-i-work').offset().top - $(window).height() + 100;
     $(window).scroll(function(event) {
          if ($(window).scrollTop() >= scrollDistanceAboutHowWorkLine) {
              animate(4);
